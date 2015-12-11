@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FragmentTest/FragmentTest.iml" filepath="$PROJECT_DIR$/FragmentTest/FragmentTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyFirstApplication.iml" filepath="$PROJECT_DIR$/MyFirstApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlclient/aidlclient.iml" filepath="$PROJECT_DIR$/aidlclient/aidlclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidltest/aidltest.iml" filepath="$PROJECT_DIR$/aidltest/aidltest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidcharttest/androidcharttest.iml" filepath="$PROJECT_DIR$/androidcharttest/androidcharttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynctasktest/asynctasktest.iml" filepath="$PROJECT_DIR$/asynctasktest/asynctasktest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" filepath="$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardviewtest/cardviewtest.iml" filepath="$PROJECT_DIR$/cardviewtest/cardviewtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" filepath="$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configchangetest/configchangetest.iml" filepath="$PROJECT_DIR$/configchangetest/configchangetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edittexttest/edittexttest.iml" filepath="$PROJECT_DIR$/edittexttest/edittexttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" filepath="$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragment2/fragment2.iml" filepath="$PROJECT_DIR$/fragment2/fragment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frescotest/frescotest.iml" filepath="$PROJECT_DIR$/frescotest/frescotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" filepath="$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getphoneapp/getphoneapp.iml" filepath="$PROJECT_DIR$/getphoneapp/getphoneapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridviewtest/gridviewtest.iml" filepath="$PROJECT_DIR$/gridviewtest/gridviewtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridviewtest2/gridviewtest2.iml" filepath="$PROJECT_DIR$/gridviewtest2/gridviewtest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gsontest/gsontest.iml" filepath="$PROJECT_DIR$/gsontest/gsontest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guavatest/guavatest.iml" filepath="$PROJECT_DIR$/guavatest/guavatest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellochartstest/hellochartstest.iml" filepath="$PROJECT_DIR$/hellochartstest/hellochartstest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpoktest/httpoktest.iml" filepath="$PROJECT_DIR$/httpoktest/httpoktest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrucachetest/lrucachetest.iml" filepath="$PROJECT_DIR$/lrucachetest/lrucachetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvptest/mvptest.iml" filepath="$PROJECT_DIR$/mvptest/mvptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylistview/mylistview.iml" filepath="$PROJECT_DIR$/mylistview/mylistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navigationview/navigationview.iml" filepath="$PROJECT_DIR$/navigationview/navigationview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notificationtest/notificationtest.iml" filepath="$PROJECT_DIR$/notificationtest/notificationtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ottotest/ottotest.iml" filepath="$PROJECT_DIR$/ottotest/ottotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/painttest/painttest.iml" filepath="$PROJECT_DIR$/painttest/painttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/palettetest/palettetest.iml" filepath="$PROJECT_DIR$/palettetest/palettetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" filepath="$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" filepath="$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testui/testui.iml" filepath="$PROJECT_DIR$/testui/testui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textviewtest/textviewtest.iml" filepath="$PROJECT_DIR$/textviewtest/textviewtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toucheventtest/toucheventtest.iml" filepath="$PROJECT_DIR$/toucheventtest/toucheventtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uitest/uitest.iml" filepath="$PROJECT_DIR$/uitest/uitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagertest/viewpagertest.iml" filepath="$PROJECT_DIR$/viewpagertest/viewpagertest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webviewtest/webviewtest.iml" filepath="$PROJECT_DIR$/webviewtest/webviewtest.iml" />
+    </modules>
+  </component>
+</project>

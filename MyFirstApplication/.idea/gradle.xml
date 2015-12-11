@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.4" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FragmentTest" />
+            <option value="$PROJECT_DIR$/aidlclient" />
+            <option value="$PROJECT_DIR$/aidltest" />
+            <option value="$PROJECT_DIR$/androidcharttest" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/asynctasktest" />
+            <option value="$PROJECT_DIR$/bitmapfactorytest" />
+            <option value="$PROJECT_DIR$/cardviewtest" />
+            <option value="$PROJECT_DIR$/circularfloatingactionmenutest" />
+            <option value="$PROJECT_DIR$/configchangetest" />
+            <option value="$PROJECT_DIR$/download" />
+            <option value="$PROJECT_DIR$/edittexttest" />
+            <option value="$PROJECT_DIR$/floatactionbutton" />
+            <option value="$PROJECT_DIR$/fragment2" />
+            <option value="$PROJECT_DIR$/frescotest" />
+            <option value="$PROJECT_DIR$/gesturedetectortest" />
+            <option value="$PROJECT_DIR$/getphoneapp" />
+            <option value="$PROJECT_DIR$/gridviewtest" />
+            <option value="$PROJECT_DIR$/gridviewtest2" />
+            <option value="$PROJECT_DIR$/gsontest" />
+            <option value="$PROJECT_DIR$/guavatest" />
+            <option value="$PROJECT_DIR$/hellochartstest" />
+            <option value="$PROJECT_DIR$/httpoktest" />
+            <option value="$PROJECT_DIR$/lrucachetest" />
+            <option value="$PROJECT_DIR$/mvptest" />
+            <option value="$PROJECT_DIR$/mylistview" />
+            <option value="$PROJECT_DIR$/navigationview" />
+            <option value="$PROJECT_DIR$/notificationtest" />
+            <option value="$PROJECT_DIR$/ottotest" />
+            <option value="$PROJECT_DIR$/painttest" />
+            <option value="$PROJECT_DIR$/palettetest" />
+            <option value="$PROJECT_DIR$/popupwindowtest" />
+            <option value="$PROJECT_DIR$/pulltorefreshlistview" />
+            <option value="$PROJECT_DIR$/swiperefreshlayouttest" />
+            <option value="$PROJECT_DIR$/tabandviewpager" />
+            <option value="$PROJECT_DIR$/testui" />
+            <option value="$PROJECT_DIR$/textviewtest" />
+            <option value="$PROJECT_DIR$/toucheventtest" />
+            <option value="$PROJECT_DIR$/uitest" />
+            <option value="$PROJECT_DIR$/viewpagertest" />
+            <option value="$PROJECT_DIR$/webviewtest" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

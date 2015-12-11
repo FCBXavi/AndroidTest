@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/selector">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/iv_icon"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/tv_text"
+        android:textSize="15sp"
+        android:text="通知"
+        android:gravity="center"
+        android:layout_toRightOf="@id/iv_icon"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/black"
+        android:focusable="false"
+        />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/right"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_text"
+        android:focusable="false"
+        android:src="@drawable/right"/>
+
+</RelativeLayout>

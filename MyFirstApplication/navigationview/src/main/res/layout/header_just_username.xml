@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_link"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="www.baidu.com"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_username"
+        android:layout_above="@+id/tv_link"
+        android:text="hahahaha"/>
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/tv_username"
+        android:layout_marginBottom="16sp"
+        android:src="@android:color/holo_blue_bright"/>
+
+</RelativeLayout>

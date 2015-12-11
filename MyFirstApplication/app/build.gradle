@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+//设置编译android项目的参数
+android {
+    compileSdkVersion 21 //编译时使用的skd版本
+    buildToolsVersion "21.1.2"//buildTools版本,本地必须有这个版本,如果没有,必须用本地的其他版本来替代
+
+    defaultConfig {
+        //应用的包名,最小skd版本,版本号,版本名
+        applicationId "com.example.quxiaopeng.myfirstapplication"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false//是否进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'//混淆文件的位置
+        }
+    }
+}
+
+dependencies {
+    //编译libs目录下的所有jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])//多个文件
+    compile 'com.android.support:appcompat-v7:22.2.1'//编译第三方库
+}

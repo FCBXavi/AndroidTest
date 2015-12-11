@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+
+    <!--
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/frsco_img1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            fresco:placeholderImage="@drawable/icon"/>
+            -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/frsco_img1"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="false"
+            fresco:roundWithOverlayColor="#333333"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="#222222"
+            fresco:roundingBorderWidth="1dp"
+            fresco:placeholderImage="@drawable/icon"
+            fresco:failureImage="@drawable/mail"
+            fresco:retryImage="@drawable/right"
+            fresco:progressBarImage="@android:color/holo_blue_bright"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/frsco_img2"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="false"
+            fresco:roundWithOverlayColor="#333333"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="#33CC5B"
+            fresco:roundingBorderWidth="10dp"
+            fresco:placeholderImage="@drawable/icon"
+            fresco:failureImage="@drawable/mail"
+            fresco:retryImage="@drawable/right"
+            fresco:pressedStateOverlayImage="@android:color/black"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/frsco_img3"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="false"
+            fresco:roundWithOverlayColor="#F0E511"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="#FC6853"
+            fresco:roundingBorderWidth="5dp"
+            fresco:placeholderImage="@drawable/icon"
+            fresco:failureImage="@drawable/mail"
+            fresco:retryImage="@drawable/right"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

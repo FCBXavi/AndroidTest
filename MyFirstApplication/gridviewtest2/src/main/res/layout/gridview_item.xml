@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/cherry"
+        android:id="@+id/iv_fruit"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fruitname"
+        android:layout_below="@+id/iv_fruit"
+        android:text="水果名称"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cb_selectFruit"/>
+
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#7f4876FF"
+        android:id="@+id/iv_tint"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
