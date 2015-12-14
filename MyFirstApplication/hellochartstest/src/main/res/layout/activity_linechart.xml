@@ -14,6 +14,7 @@
         android:textStyle="bold" />
 
     <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart_line"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
