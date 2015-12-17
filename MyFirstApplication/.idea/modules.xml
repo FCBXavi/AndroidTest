@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/cardviewtest/cardviewtest.iml" filepath="$PROJECT_DIR$/cardviewtest/cardviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" filepath="$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" />
       <module fileurl="file://$PROJECT_DIR$/configchangetest/configchangetest.iml" filepath="$PROJECT_DIR$/configchangetest/configchangetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" filepath="$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
       <module fileurl="file://$PROJECT_DIR$/edittexttest/edittexttest.iml" filepath="$PROJECT_DIR$/edittexttest/edittexttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" filepath="$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/frescotest/frescotest.iml" filepath="$PROJECT_DIR$/frescotest/frescotest.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" filepath="$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" />
       <module fileurl="file://$PROJECT_DIR$/getphoneapp/getphoneapp.iml" filepath="$PROJECT_DIR$/getphoneapp/getphoneapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendaotest/greendaotest.iml" filepath="$PROJECT_DIR$/greendaotest/greendaotest.iml" />
       <module fileurl="file://$PROJECT_DIR$/gridviewtest/gridviewtest.iml" filepath="$PROJECT_DIR$/gridviewtest/gridviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/gridviewtest2/gridviewtest2.iml" filepath="$PROJECT_DIR$/gridviewtest2/gridviewtest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/gsontest/gsontest.iml" filepath="$PROJECT_DIR$/gsontest/gsontest.iml" />

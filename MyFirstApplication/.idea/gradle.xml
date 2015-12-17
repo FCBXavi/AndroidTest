@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/cardviewtest" />
             <option value="$PROJECT_DIR$/circularfloatingactionmenutest" />
             <option value="$PROJECT_DIR$/configchangetest" />
+            <option value="$PROJECT_DIR$/daoexamplegenerator" />
             <option value="$PROJECT_DIR$/download" />
             <option value="$PROJECT_DIR$/edittexttest" />
             <option value="$PROJECT_DIR$/floatactionbutton" />
@@ -27,6 +28,7 @@
             <option value="$PROJECT_DIR$/frescotest" />
             <option value="$PROJECT_DIR$/gesturedetectortest" />
             <option value="$PROJECT_DIR$/getphoneapp" />
+            <option value="$PROJECT_DIR$/greendaotest" />
             <option value="$PROJECT_DIR$/gridviewtest" />
             <option value="$PROJECT_DIR$/gridviewtest2" />
             <option value="$PROJECT_DIR$/gsontest" />
