@@ -31,7 +31,8 @@ public class MainActivity extends Activity {
 
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        MyAdapter adapter=new MyAdapter(this,list);
+        MyAdapter myAdapter=new MyAdapter(this,list);
+        HeaderAndFooterRecyclerViewAdapter adapter = new HeaderAndFooterRecyclerViewAdapter(myAdapter);
         recyclerView.setAdapter(adapter);
     }
 

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         listView.setAdapter(mAdapter);
         swipeRefreshLayout.setOnRefreshListener(this);
 
-        swipeRefreshLayout.setColorSchemeColors(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_orange_light, android.R.color.holo_red_light);
+        swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_orange_light, android.R.color.holo_red_light);
     }
 
     @Override

@@ -38,6 +38,7 @@
       <module fileurl="file://$PROJECT_DIR$/palettetest/palettetest.iml" filepath="$PROJECT_DIR$/palettetest/palettetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" filepath="$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" filepath="$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/testui/testui.iml" filepath="$PROJECT_DIR$/testui/testui.iml" />
