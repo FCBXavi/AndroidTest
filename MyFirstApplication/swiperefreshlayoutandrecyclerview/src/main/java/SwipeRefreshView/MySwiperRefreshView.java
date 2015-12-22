@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 
 /**
- * 继承自SwipeRefreshLayout,从而实现滑动到底部时上拉家在更多的功能
+ * 继承自SwipeRefreshLayout,实现滑动到底部时上拉加载更多的功能,需要内部包含一个RecyclerView
  * Created by quxiaopeng on 15/12/18.
  */
 public class MySwiperRefreshView extends SwipeRefreshLayout {
@@ -140,7 +140,19 @@ public class MySwiperRefreshView extends SwipeRefreshLayout {
      * 手动设置加载状态
      */
     public void setLoading(LoadingFooter.State state) {
-        RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, state, null);
+        if (state == LoadingFooter.State.NetWorkError){
+            RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, state, new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mOnLoadListener!=null){
+                        RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, LoadingFooter.State.Loading, null);
+                        mOnLoadListener.onLoad();
+                    }
+                }
+            });
+        }else {
+            RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, state, null);
+        }
     }
 
     public void setOnLoadListener(OnLoadListener loadListener) {

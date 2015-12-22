@@ -11,9 +11,7 @@ import android.widget.TextView;
 import com.example.quxiaopeng.swiperefreshlayoutandrecyclerview.R;
 
 /**
- * Created by cundong on 2015/10/9.
- * <p/>
- * ListView/GridView/RecyclerView 分页加载时使用到的FooterView
+ * ListView分页加载时使用到的FooterView
  */
 public class LoadingFooter extends RelativeLayout {
 

@@ -18,7 +18,7 @@ import SwipeRefreshView.LoadingFooter;
 import SwipeRefreshView.MySwiperRefreshView;
 
 public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener, MySwiperRefreshView.OnLoadListener{
-    
+
     List<String> list;
     MySwiperRefreshView mSwiperRefreshView;
     RecyclerView mRecyclerView;
@@ -69,7 +69,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
                 list.add(dateFormat.format(new Date()));
                 recyclerAdapter.notifyDataSetChanged();
                 mSwiperRefreshView.setPageSize(5);
-                mSwiperRefreshView.setLoading(LoadingFooter.State.Normal);
+                mSwiperRefreshView.setLoading(LoadingFooter.State.NetWorkError);
             }
         },1000);
     }

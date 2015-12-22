@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * 继承自RecyclerView.OnScrollListener，可以监听到是否滑动到页面最低部
+ * 继承自RecyclerView.OnScrollListener，可以监听到是否滑动到页面最底部
  */
 public class RecyclerOnScrollListener extends RecyclerView.OnScrollListener implements OnListLoadNextPageListener {
 
