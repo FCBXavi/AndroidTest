@@ -164,8 +164,25 @@ public class LoadingFooter extends RelativeLayout {
 
                 mNetworkErrorView.setVisibility(showView ? VISIBLE : GONE);
                 break;
-            default:
+            case Empty:
+                setOnClickListener(null);
+                if (mNormalView!=null){
+                    mNormalView.setVisibility(GONE);
+                }
 
+                if (mLoadingView != null) {
+                    mLoadingView.setVisibility(GONE);
+                }
+
+                if (mTheEndView != null) {
+                    mTheEndView.setVisibility(GONE);
+                }
+
+                if (mNetworkErrorView != null) {
+                    mNetworkErrorView.setVisibility(GONE);
+                }
+                break;
+            default:
                 break;
         }
     }
@@ -175,5 +192,6 @@ public class LoadingFooter extends RelativeLayout {
         , TheEnd/**加载到最底了*/
         , Loading/**加载中..*/
         , NetWorkError/**网络异常*/
+        , Empty
     }
 }

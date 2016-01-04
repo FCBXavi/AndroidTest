@@ -23,6 +23,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
     MySwiperRefreshView mSwiperRefreshView;
     RecyclerView mRecyclerView;
     RecyclerAdapter recyclerAdapter;
+    HeaderAndFooterRecyclerViewAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
             list.add("item - "+i);
         }
         recyclerAdapter = new RecyclerAdapter(this,list);
-        HeaderAndFooterRecyclerViewAdapter adapter=new HeaderAndFooterRecyclerViewAdapter(recyclerAdapter);
+        adapter=new HeaderAndFooterRecyclerViewAdapter(recyclerAdapter);
         mRecyclerView.setAdapter(adapter);
 
 
@@ -53,7 +54,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
             public void run() {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 list.add(dateFormat.format(new Date()));
-                recyclerAdapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
                 mSwiperRefreshView.setRefreshing(false);
             }
         },1000);
@@ -67,7 +68,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
             public void run() {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 list.add(dateFormat.format(new Date()));
-                recyclerAdapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
                 mSwiperRefreshView.setPageSize(5);
                 mSwiperRefreshView.setLoading(LoadingFooter.State.NetWorkError);
             }

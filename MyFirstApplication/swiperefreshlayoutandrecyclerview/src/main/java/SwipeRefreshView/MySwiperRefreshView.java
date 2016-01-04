@@ -151,7 +151,7 @@ public class MySwiperRefreshView extends SwipeRefreshLayout {
                 }
             });
         }else {
-            RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, state, null);
+            RecyclerViewStateUtils.setFooterViewState(mRecyclerView,state);
         }
     }
 
