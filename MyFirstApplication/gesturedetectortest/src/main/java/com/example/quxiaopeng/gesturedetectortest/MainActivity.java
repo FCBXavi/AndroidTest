@@ -128,6 +128,7 @@ public class MainActivity extends Activity implements View.OnTouchListener {
 
         Button button = (Button) findViewById(R.id.btn_test);
         button.setOnTouchListener(this);
+
     }
 
     @Override

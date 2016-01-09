@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asynctasktest" />
             <option value="$PROJECT_DIR$/bitmapfactorytest" />
+            <option value="$PROJECT_DIR$/butterknifetest" />
             <option value="$PROJECT_DIR$/cardviewtest" />
             <option value="$PROJECT_DIR$/circularfloatingactionmenutest" />
             <option value="$PROJECT_DIR$/configchangetest" />
@@ -35,6 +36,7 @@
             <option value="$PROJECT_DIR$/guavatest" />
             <option value="$PROJECT_DIR$/hellochartstest" />
             <option value="$PROJECT_DIR$/httpoktest" />
+            <option value="$PROJECT_DIR$/leakcanarytest" />
             <option value="$PROJECT_DIR$/lrucachetest" />
             <option value="$PROJECT_DIR$/mvptest" />
             <option value="$PROJECT_DIR$/mylistview" />

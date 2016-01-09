@@ -38,6 +38,7 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         Fresco.initialize(this);
         setContentView(R.layout.activity_main);
         setImage();
+
     }
 
     /**

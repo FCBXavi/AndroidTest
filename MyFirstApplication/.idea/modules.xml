@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctasktest/asynctasktest.iml" filepath="$PROJECT_DIR$/asynctasktest/asynctasktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" filepath="$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknifetest/butterknifetest.iml" filepath="$PROJECT_DIR$/butterknifetest/butterknifetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/cardviewtest/cardviewtest.iml" filepath="$PROJECT_DIR$/cardviewtest/cardviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" filepath="$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" />
       <module fileurl="file://$PROJECT_DIR$/configchangetest/configchangetest.iml" filepath="$PROJECT_DIR$/configchangetest/configchangetest.iml" />
@@ -28,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/guavatest/guavatest.iml" filepath="$PROJECT_DIR$/guavatest/guavatest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hellochartstest/hellochartstest.iml" filepath="$PROJECT_DIR$/hellochartstest/hellochartstest.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpoktest/httpoktest.iml" filepath="$PROJECT_DIR$/httpoktest/httpoktest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" filepath="$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" />
       <module fileurl="file://$PROJECT_DIR$/lrucachetest/lrucachetest.iml" filepath="$PROJECT_DIR$/lrucachetest/lrucachetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvptest/mvptest.iml" filepath="$PROJECT_DIR$/mvptest/mvptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylistview/mylistview.iml" filepath="$PROJECT_DIR$/mylistview/mylistview.iml" />
