@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyFirstApplication.iml" filepath="$PROJECT_DIR$/MyFirstApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidlclient/aidlclient.iml" filepath="$PROJECT_DIR$/aidlclient/aidlclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidltest/aidltest.iml" filepath="$PROJECT_DIR$/aidltest/aidltest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alarmtest/alarmtest.iml" filepath="$PROJECT_DIR$/alarmtest/alarmtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidcharttest/androidcharttest.iml" filepath="$PROJECT_DIR$/androidcharttest/androidcharttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctasktest/asynctasktest.iml" filepath="$PROJECT_DIR$/asynctasktest/asynctasktest.iml" />
