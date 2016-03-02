@@ -19,7 +19,7 @@ public class ClockReceiver extends BroadcastReceiver {
         i.putExtra("hello", str);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, i, 0);
 //        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        context.startActivity(i);
+//        context.startActivity(i
 //        Toast.makeText(context, "闹钟响了", Toast.LENGTH_SHORT).show();
 //        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon);
         RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.notification_layout);
@@ -45,7 +45,7 @@ public class ClockReceiver extends BroadcastReceiver {
         //DEFAULT_LIGHTS  使用默认闪光提示
         //DEFAULT_SOUNDS  使用默认提示声音
         //DEFAULT_VIBRATE 使用默认手机震动，需加上<uses-permission android:name="android.permission.VIBRATE" />权限
-        notification.defaults = Notification.DEFAULT_LIGHTS;
+        notification.defaults = Notification.DEFAULT_ALL;
 //
         notificationManager.notify(notification.flags,notification);
     }

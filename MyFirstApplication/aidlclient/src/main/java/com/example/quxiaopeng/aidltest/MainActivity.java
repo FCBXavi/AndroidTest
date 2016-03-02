@@ -14,19 +14,18 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView textView= (TextView) findViewById(R.id.textview);
-        Button button1=(Button)findViewById(R.id.button1);
-        Button button2=(Button)findViewById(R.id.button2);
+        final TextView textView = (TextView) findViewById(R.id.textview);
+        Button button1 = (Button) findViewById(R.id.button1);
+        Button button2 = (Button) findViewById(R.id.button2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent();
+                Intent intent = new Intent();
                 intent.setAction("startcalculate");
                 intent.setPackage("com.example.quxiaopeng.aidltest");
                 bindService(intent, mConn, Context.BIND_AUTO_CREATE);
@@ -36,32 +35,32 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int i=0;
-                try{
-                    i=myServiceAIDLinstance.add(2,3);
-                    Log.i("i",i+"");
-                }
-                catch (Exception e){
+                int i = 0;
+                try {
+                    i = myServiceAIDLinstance.add(2, 3);
+                    Log.i("i", i + "");
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
-                textView.setText(i+"");
+                textView.setText(i + "");
             }
         });
     }
+
     myServiceAIDL myServiceAIDLinstance;
 
-    private ServiceConnection mConn=new ServiceConnection() {
+    private ServiceConnection mConn = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            Log.i("client","connect service start");
-            myServiceAIDLinstance=myServiceAIDL.Stub.asInterface(service);
-            Log.i("client","connect service");
+            Log.i("client", "connect service start");
+            myServiceAIDLinstance = myServiceAIDL.Stub.asInterface(service);
+            Log.i("client", "connect service");
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Log.i("client","disconnect service");
-            myServiceAIDLinstance=null;
+            Log.i("client", "disconnect service");
+            myServiceAIDLinstance = null;
         }
     };
 
