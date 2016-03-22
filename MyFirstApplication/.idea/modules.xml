@@ -32,6 +32,7 @@
       <module fileurl="file://$PROJECT_DIR$/hellochartstest/hellochartstest.iml" filepath="$PROJECT_DIR$/hellochartstest/hellochartstest.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpoktest/httpoktest.iml" filepath="$PROJECT_DIR$/httpoktest/httpoktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" filepath="$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liteormtest/liteormtest.iml" filepath="$PROJECT_DIR$/liteormtest/liteormtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/lrucachetest/lrucachetest.iml" filepath="$PROJECT_DIR$/lrucachetest/lrucachetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvptest/mvptest.iml" filepath="$PROJECT_DIR$/mvptest/mvptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylistview/mylistview.iml" filepath="$PROJECT_DIR$/mylistview/mylistview.iml" />
@@ -42,6 +43,7 @@
       <module fileurl="file://$PROJECT_DIR$/palettetest/palettetest.iml" filepath="$PROJECT_DIR$/palettetest/palettetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofittest/retrofittest.iml" filepath="$PROJECT_DIR$/retrofittest/retrofittest.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" filepath="$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" filepath="$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" />

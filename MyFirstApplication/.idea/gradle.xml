@@ -3,7 +3,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.10" />
         <option name="modules">
@@ -38,6 +38,7 @@
             <option value="$PROJECT_DIR$/hellochartstest" />
             <option value="$PROJECT_DIR$/httpoktest" />
             <option value="$PROJECT_DIR$/leakcanarytest" />
+            <option value="$PROJECT_DIR$/liteormtest" />
             <option value="$PROJECT_DIR$/lrucachetest" />
             <option value="$PROJECT_DIR$/mvptest" />
             <option value="$PROJECT_DIR$/mylistview" />
@@ -48,6 +49,7 @@
             <option value="$PROJECT_DIR$/palettetest" />
             <option value="$PROJECT_DIR$/popupwindowtest" />
             <option value="$PROJECT_DIR$/pulltorefreshlistview" />
+            <option value="$PROJECT_DIR$/retrofittest" />
             <option value="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview" />
             <option value="$PROJECT_DIR$/swiperefreshlayouttest" />
             <option value="$PROJECT_DIR$/tabandviewpager" />
@@ -91,6 +93,7 @@
             <option value="$PROJECT_DIR$/hellochartstest" />
             <option value="$PROJECT_DIR$/httpoktest" />
             <option value="$PROJECT_DIR$/leakcanarytest" />
+            <option value="$PROJECT_DIR$/liteormtest" />
             <option value="$PROJECT_DIR$/lrucachetest" />
             <option value="$PROJECT_DIR$/mvptest" />
             <option value="$PROJECT_DIR$/mylistview" />
@@ -101,6 +104,7 @@
             <option value="$PROJECT_DIR$/palettetest" />
             <option value="$PROJECT_DIR$/popupwindowtest" />
             <option value="$PROJECT_DIR$/pulltorefreshlistview" />
+            <option value="$PROJECT_DIR$/retrofittest" />
             <option value="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview" />
             <option value="$PROJECT_DIR$/swiperefreshlayouttest" />
             <option value="$PROJECT_DIR$/tabandviewpager" />

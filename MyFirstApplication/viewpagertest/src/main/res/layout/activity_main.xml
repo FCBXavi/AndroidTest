@@ -25,7 +25,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/tv_title2"
             android:text="页面2"
             android:gravity="center"
             android:textSize="15sp"/>
@@ -38,6 +37,14 @@
             android:text="页面3"
             android:gravity="center"
             android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_button"
+            android:text="to another"
+            />
 
     </LinearLayout>
     
