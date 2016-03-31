@@ -76,18 +76,25 @@ public class MainActivity extends Activity {
         MovieService movieService = retrofit.create(MovieService.class);
         movieService.getTopMovie(0, 10)
                 .subscribeOn(Schedulers.io())
-                .map(new Func1<HttpResultModel<List<MovieModel>>, List<MovieModel>>() {
+//                .map(new Func1<HttpResultModel<List<MovieModel>>, List<MovieModel>>() {
+//                    @Override
+//                    public List<MovieModel> call(HttpResultModel<List<MovieModel>> listHttpResultModel) {
+//                        return listHttpResultModel.subjects;
+//                    }
+//                })
+//                .flatMap(new Func1<List<MovieModel>, Observable<MovieModel>>() {
+//                    @Override
+//                    public Observable<MovieModel> call(List<MovieModel> movieModels) {
+//                        return Observable.from(movieModels);
+//                    }
+//                })
+                .flatMap(new Func1<HttpResultModel<List<MovieModel>>, Observable<MovieModel>>() {
                     @Override
-                    public List<MovieModel> call(HttpResultModel<List<MovieModel>> listHttpResultModel) {
-                        return listHttpResultModel.subjects;
+                    public Observable<MovieModel> call(HttpResultModel<List<MovieModel>> listHttpResultModel) {
+                        return Observable.from(listHttpResultModel.subjects);
                     }
                 })
-                .flatMap(new Func1<List<MovieModel>, Observable<MovieModel>>() {
-                    @Override
-                    public Observable<MovieModel> call(List<MovieModel> movieModels) {
-                        return Observable.from(movieModels);
-                    }
-                }).doOnSubscribe(new Action0() {
+                .doOnSubscribe(new Action0() {
                      @Override
                       public void call() {
                           loadingDialog.show();
@@ -96,6 +103,7 @@ public class MainActivity extends Activity {
                 .subscribeOn(AndroidSchedulers.mainThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<MovieModel>() {
+
                     @Override
                     public void onCompleted() {
                         loadingDialog.dismiss();
