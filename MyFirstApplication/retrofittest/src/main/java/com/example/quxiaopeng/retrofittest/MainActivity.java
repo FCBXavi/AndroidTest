@@ -15,6 +15,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Observable;
+import rx.Scheduler;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
@@ -120,5 +121,14 @@ public class MainActivity extends Activity {
                         resultTv.setText(resultTv.getText() + "\n" + movieModel.toString());
                     }
                 });
+
+        Scheduler.Worker worker = Schedulers.newThread().createWorker();
+        worker.schedule(new Action0() {
+            @Override
+            public void call() {
+
+            }
+        });
+        worker.unsubscribe();
     }
 }
