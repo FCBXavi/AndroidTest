@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
                 list.add(dateFormat.format(new Date()));
                 adapter.notifyDataSetChanged();
                 mSwiperRefreshView.setPageSize(5);
-                mSwiperRefreshView.setLoading(LoadingFooter.State.NetWorkError);
+                mSwiperRefreshView.setState(LoadingFooter.State.NetWorkError);
             }
         },1000);
     }

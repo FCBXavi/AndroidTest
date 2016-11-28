@@ -13,6 +13,7 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.ScatterData;
 import com.github.mikephil.charting.data.ScatterDataSet;
 import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.interfaces.datasets.IScatterDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ import java.util.List;
 public class ScatterChartActivity extends Activity implements OnChartValueSelectedListener{
 
     ScatterChart mScatterChart;
-    List<ScatterDataSet> scatterDataSets;
+    List<IScatterDataSet> scatterDataSets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

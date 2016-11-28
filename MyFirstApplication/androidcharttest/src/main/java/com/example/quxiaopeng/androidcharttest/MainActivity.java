@@ -17,11 +17,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button pieChart = (Button) findViewById(R.id.btn_pie_chart);
         Button barChart = (Button) findViewById(R.id.btn_bar_chart);
         Button scatterChart = (Button) findViewById(R.id.btn_scatter_chart);
+        Button horizontalBarChart = (Button) findViewById(R.id.btn_horizontal_bar_chart);
 
         linechart.setOnClickListener(this);
         pieChart.setOnClickListener(this);
         barChart.setOnClickListener(this);
         scatterChart.setOnClickListener(this);
+        horizontalBarChart.setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +40,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_scatter_chart:
                 startActivity(new Intent(this, ScatterChartActivity.class));
+                break;
+            case R.id.btn_horizontal_bar_chart:
+                startActivity(new Intent(this, HorizontalBarChartActivity.class));
                 break;
             default:
                 break;

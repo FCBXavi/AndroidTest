@@ -13,6 +13,7 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ import java.util.List;
  */
 public class LineChartActivity extends Activity implements OnChartValueSelectedListener{
     LineChart mLineChart;
-    List<LineDataSet> lineDataSets = new ArrayList<>();
+    List<ILineDataSet> lineDataSets = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,7 +131,7 @@ public class LineChartActivity extends Activity implements OnChartValueSelectedL
         mLineChart.setDragEnabled(true);
         mLineChart.setScaleEnabled(false);
         mLineChart.setPinchZoom(false);// if disabled, scaling can be done on x- and y-axis separately
-        mLineChart.setHighlightEnabled(true);
+//        mLineChart.setHighlightEnabled(true);
         mLineChart.animateX(2000);
 
         Legend legend = mLineChart.getLegend();// 设置比例图标示，就是那个一组y的value的

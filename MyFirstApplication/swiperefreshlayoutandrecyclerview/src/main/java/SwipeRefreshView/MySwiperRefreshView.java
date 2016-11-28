@@ -139,19 +139,38 @@ public class MySwiperRefreshView extends SwipeRefreshLayout {
     /**
      * 手动设置加载状态
      */
-    public void setLoading(LoadingFooter.State state) {
-        if (state == LoadingFooter.State.NetWorkError){
+    public void setState(LoadingFooter.State state) {
+        if (mRecyclerView == null) {
+            initRecyclerView();
+        }
+        if (state == LoadingFooter.State.NetWorkError) {
             RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, state, new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mOnLoadListener!=null){
-                        RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, pageSize, LoadingFooter.State.Loading, null);
+                    if (mOnLoadListener != null) {
+                        RecyclerViewStateUtils.setFooterViewState(mContext, mRecyclerView, 1, LoadingFooter.State.Loading, null);
                         mOnLoadListener.onLoad();
                     }
                 }
             });
-        }else {
-            RecyclerViewStateUtils.setFooterViewState(mRecyclerView,state);
+        } else if (state == LoadingFooter.State.Normal) {
+            RecyclerViewStateUtils.setFooterViewState(mRecyclerView, LoadingFooter.State.Normal);
+        } else if (state == LoadingFooter.State.TheEnd) {
+            if(mRecyclerView.getAdapter() instanceof HeaderAndFooterRecyclerViewAdapter) {
+                HeaderAndFooterRecyclerViewAdapter headerAndFooterRecyclerViewAdapter = (HeaderAndFooterRecyclerViewAdapter) mRecyclerView.getAdapter();
+                int itemCount = 0;
+                if (null != headerAndFooterRecyclerViewAdapter) {
+                    itemCount = headerAndFooterRecyclerViewAdapter.getInnerAdapter().getItemCount();
+                }
+                if (itemCount < pageSize) {
+                    RecyclerViewStateUtils.setFooterViewState(mRecyclerView, LoadingFooter.State.Normal);
+                } else {
+                    RecyclerViewStateUtils.setFooterViewState(mRecyclerView, LoadingFooter.State.TheEnd);
+                }
+            }
+        }
+        if (mRecyclerView != null && mRecyclerView.getAdapter() != null) {
+            mRecyclerView.getAdapter().notifyDataSetChanged();
         }
     }
 

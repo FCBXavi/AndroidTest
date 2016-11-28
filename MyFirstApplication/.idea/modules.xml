@@ -34,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" filepath="$PROJECT_DIR$/leakcanarytest/leakcanarytest.iml" />
       <module fileurl="file://$PROJECT_DIR$/liteormtest/liteormtest.iml" filepath="$PROJECT_DIR$/liteormtest/liteormtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/lrucachetest/lrucachetest.iml" filepath="$PROJECT_DIR$/lrucachetest/lrucachetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maptest/maptest.iml" filepath="$PROJECT_DIR$/maptest/maptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvptest/mvptest.iml" filepath="$PROJECT_DIR$/mvptest/mvptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylistview/mylistview.iml" filepath="$PROJECT_DIR$/mylistview/mylistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/navigationview/navigationview.iml" filepath="$PROJECT_DIR$/navigationview/navigationview.iml" />
@@ -49,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" filepath="$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/testui/testui.iml" filepath="$PROJECT_DIR$/testui/testui.iml" />
       <module fileurl="file://$PROJECT_DIR$/textviewtest/textviewtest.iml" filepath="$PROJECT_DIR$/textviewtest/textviewtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toolbartest/toolbartest.iml" filepath="$PROJECT_DIR$/toolbartest/toolbartest.iml" />
       <module fileurl="file://$PROJECT_DIR$/toucheventtest/toucheventtest.iml" filepath="$PROJECT_DIR$/toucheventtest/toucheventtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/uitest/uitest.iml" filepath="$PROJECT_DIR$/uitest/uitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagertest/viewpagertest.iml" filepath="$PROJECT_DIR$/viewpagertest/viewpagertest.iml" />

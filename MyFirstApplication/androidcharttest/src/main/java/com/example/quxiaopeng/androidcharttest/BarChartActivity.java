@@ -14,6 +14,7 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ import java.util.List;
 public class BarChartActivity extends Activity implements OnChartValueSelectedListener {
 
     BarChart mBarChart;
-    List<BarDataSet> barDataSets;
+    List<IBarDataSet> barDataSets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,14 +43,24 @@ public class BarChartActivity extends Activity implements OnChartValueSelectedLi
     }
 
     private void setChartStyle() {
-        mBarChart.setDescription("Bar chart");
-        mBarChart.setDrawGridBackground(true);
-        mBarChart.setGridBackgroundColor(Color.TRANSPARENT);
-        mBarChart.setScaleEnabled(false);
+//        mBarChart.setDescription("Bar chart");
+//        mBarChart.setDrawGridBackground(true);
+//        mBarChart.setGridBackgroundColor(Color.TRANSPARENT);
+//        mBarChart.setScaleEnabled(false);
 
+        mBarChart.setMaxVisibleValueCount(60);
+        mBarChart.setAutoScaleMinMaxEnabled(true);
+        mBarChart.setDrawBarShadow(false);
+        mBarChart.setDrawValueAboveBar(false);
+        mBarChart.setDescription("");
+        mBarChart.setNoDataText("");
+        mBarChart.setPinchZoom(false);
+        mBarChart.setDrawGridBackground(false);
+        mBarChart.animateY(1000);
 
         Legend legend=mBarChart.getLegend();
         legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
+        legend.setXEntrySpace(62f);
 
 
         //X轴属性
@@ -57,20 +68,37 @@ public class BarChartActivity extends Activity implements OnChartValueSelectedLi
 //        xAxis.setDrawLabels(false);//是否将xvalue中的值显示到屏幕
 //        xAxis.setDrawAxisLine(false);
         xAxis.setDrawGridLines(false);
+
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-//        YAxis yAxis=mBarChart.get
+        xAxis.setDrawGridLines(false);
+        xAxis.setAxisLineColor(Color.argb(33, 0, 0, 0));
+        xAxis.setLabelsToSkip(2);
+        xAxis.setTextColor(Color.parseColor("#9B9B9B"));
 
         //左侧Y轴属性
-        YAxis yAxisleft=mBarChart.getAxisLeft();
-        yAxisleft.setDrawLabels(true);
-        yAxisleft.setDrawGridLines(false);
-        yAxisleft.setDrawAxisLine(false);
+        YAxis leftAxis = mBarChart.getAxisLeft();
+        leftAxis.setEnabled(true);
+        leftAxis.setDrawAxisLine(false);
+        leftAxis.setDrawGridLines(false);
+//        leftAxis.setAxisMinValue(0);
+        leftAxis.setTextColor(Color.parseColor("#9B9B9B"));
+//        leftAxis.setValueFormatter(new LongValueFormatter());
 
         //右侧Y轴属性
         YAxis yAxisright=mBarChart.getAxisRight();
         yAxisright.setDrawLabels(false);
         yAxisright.setDrawGridLines(false);
         yAxisright.setDrawAxisLine(false);
+
+
+        mBarChart.getAxisLeft().setEnabled(true);
+        mBarChart.getAxisRight().setEnabled(false);
+        mBarChart.setTouchEnabled(true);
+        mBarChart.setDragEnabled(true);
+        mBarChart.setScaleEnabled(false);
+        mBarChart.setPinchZoom(false);
+        if(mBarChart.getData() != null)
+            mBarChart.getData().setHighlightEnabled(true);
 
     }
 
