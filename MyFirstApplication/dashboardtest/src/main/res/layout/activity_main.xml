@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quxiaopeng.dashboardtest.MainActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--android:textSize="50sp"/>-->
+    <RelativeLayout
+        android:id="@+id/rl_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/crm_dashboard_backgroud">
+
+    <com.example.quxiaopeng.dashboardtest.CrmDashBoardView
+        android:id="@+id/view_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:layout_below="@id/rl_dashboard"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/aidltest/aidltest.iml" filepath="$PROJECT_DIR$/aidltest/aidltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/alarmtest/alarmtest.iml" filepath="$PROJECT_DIR$/alarmtest/alarmtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidcharttest/androidcharttest.iml" filepath="$PROJECT_DIR$/androidcharttest/androidcharttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidtest/androidtest.iml" filepath="$PROJECT_DIR$/androidtest/androidtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctasktest/asynctasktest.iml" filepath="$PROJECT_DIR$/asynctasktest/asynctasktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" filepath="$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" />
@@ -16,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" filepath="$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" />
       <module fileurl="file://$PROJECT_DIR$/configchangetest/configchangetest.iml" filepath="$PROJECT_DIR$/configchangetest/configchangetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" filepath="$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dashboardtest/dashboardtest.iml" filepath="$PROJECT_DIR$/dashboardtest/dashboardtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragrecyclerview/dragrecyclerview.iml" filepath="$PROJECT_DIR$/dragrecyclerview/dragrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/edittexttest/edittexttest.iml" filepath="$PROJECT_DIR$/edittexttest/edittexttest.iml" />
@@ -45,6 +47,7 @@
       <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofittest/retrofittest.iml" filepath="$PROJECT_DIR$/retrofittest/retrofittest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scrolltest/scrolltest.iml" filepath="$PROJECT_DIR$/scrolltest/scrolltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" filepath="$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" filepath="$PROJECT_DIR$/tabandviewpager/tabandviewpager.iml" />

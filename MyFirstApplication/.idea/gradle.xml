@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/aidltest" />
             <option value="$PROJECT_DIR$/alarmtest" />
             <option value="$PROJECT_DIR$/androidcharttest" />
+            <option value="$PROJECT_DIR$/androidtest" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asynctasktest" />
             <option value="$PROJECT_DIR$/bitmapfactorytest" />
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/circularfloatingactionmenutest" />
             <option value="$PROJECT_DIR$/configchangetest" />
             <option value="$PROJECT_DIR$/daoexamplegenerator" />
+            <option value="$PROJECT_DIR$/dashboardtest" />
             <option value="$PROJECT_DIR$/download" />
             <option value="$PROJECT_DIR$/dragrecyclerview" />
             <option value="$PROJECT_DIR$/edittexttest" />
@@ -51,6 +53,7 @@
             <option value="$PROJECT_DIR$/popupwindowtest" />
             <option value="$PROJECT_DIR$/pulltorefreshlistview" />
             <option value="$PROJECT_DIR$/retrofittest" />
+            <option value="$PROJECT_DIR$/scrolltest" />
             <option value="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview" />
             <option value="$PROJECT_DIR$/swiperefreshlayouttest" />
             <option value="$PROJECT_DIR$/tabandviewpager" />
