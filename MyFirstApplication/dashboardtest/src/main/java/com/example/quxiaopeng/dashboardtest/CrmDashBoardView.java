@@ -332,7 +332,7 @@ public class CrmDashBoardView extends View {
             return;
         canvas.drawBitmap(bitmap, matrix, mBitmapPaint);
         mBitmapPaint.setColor(Color.WHITE);
-//        canvas.drawCircle(pos[0], pos[1], 8, mBitmapPaint);
+        canvas.drawCircle(pos[0], pos[1], 8, mBitmapPaint);
     }
 
     /**
@@ -349,7 +349,7 @@ public class CrmDashBoardView extends View {
         canvas.drawText("分", radius + dp2px(22), radius - dp2px(15), mTextPaint);
 
         mTextPaint.setTextSize(sp2px(14));
-        mTextPaint.setColor(Color.parseColor("#F4F4F4"));
+        mTextPaint.setColor(Color.argb(204, 244, 244, 244));
         canvas.drawText(strHint, radius, radius + dp2px(10), mTextPaint);
 
         mTextPaint.setTextSize(sp2px(10));

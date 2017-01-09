@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Crm Linechart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_orange">
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="3.5"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_mark"
+            android:layout_toRightOf="@id/tv_mark"
+            android:text="分"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_mark"
+            android:layout_below="@id/tv_mark"
+            android:layout_marginTop="8dp"
+            android:text="2016年12月3日"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_single_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="23dp"
+            android:text="较高"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_single_index"
+            android:layout_below="@id/tv_single_index"
+            android:layout_marginTop="10dp"
+            android:text="成单指数"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_date"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" />
+
+        <com.example.quxiaopeng.androidcharttest.MyLineChart
+            android:layout_below="@+id/divider1"
+            android:id="@+id/crm_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#19FDFDFD"/>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/crm_line_chart"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:text="什么是成单指数?"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="系统会基于你的客户特征、操作行为等多方面数据，实时智能运算出客户的每日成单指数。\n图中记录了最近30天该客户的成单指数，你可以根据指数走势，把控跟进周期，及时调整销售策略。"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
