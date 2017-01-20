@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctasktest/asynctasktest.iml" filepath="$PROJECT_DIR$/asynctasktest/asynctasktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" filepath="$PROJECT_DIR$/bitmapfactorytest/bitmapfactorytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitmaphandle/bitmaphandle.iml" filepath="$PROJECT_DIR$/bitmaphandle/bitmaphandle.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknifetest/butterknifetest.iml" filepath="$PROJECT_DIR$/butterknifetest/butterknifetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/cardviewtest/cardviewtest.iml" filepath="$PROJECT_DIR$/cardviewtest/cardviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" filepath="$PROJECT_DIR$/circularfloatingactionmenutest/circularfloatingactionmenutest.iml" />

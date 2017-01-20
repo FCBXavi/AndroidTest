@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float f = random.nextFloat() * 5;
                 crmDashBoardView.setMark(Float.parseFloat(format.format(f)));
-//                dashBoardView.setSesameValues(i);
             }
         });
 

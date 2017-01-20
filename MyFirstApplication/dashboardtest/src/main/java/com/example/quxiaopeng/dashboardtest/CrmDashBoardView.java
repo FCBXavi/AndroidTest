@@ -43,7 +43,7 @@ public class CrmDashBoardView extends View {
     private int height;
 
     //默认Padding值
-    private final static int defaultPadding = 40;
+    private  int defaultPadding;
 
     //圆环起始角度
     private final static float mStartAngle = 180 - 6;
@@ -121,6 +121,7 @@ public class CrmDashBoardView extends View {
     private Bitmap starSolidBitmap;
     private Drawable starHollowDrawable;
     private Paint starPaint;
+    private Paint edgePaint;
 
 
     public CrmDashBoardView(Context context) {
@@ -140,9 +141,15 @@ public class CrmDashBoardView extends View {
      * 初始化
      */
     private void init(Context context) {
+        defaultPadding = dp2px(20);
         defaultSize = dp2px(200);
         arcDistance = dp2px(6);
         starSize = dp2px(11);
+
+        edgePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        edgePaint.setStrokeWidth(dp2px(1));
+        edgePaint.setColor(Color.WHITE);
+        edgePaint.setStyle(Paint.Style.STROKE);
 
         //初始化自定义字体
         mTypeFace = Typeface.createFromAsset(context.getAssets(), "fonts/DINCondensedC.otf");
@@ -182,7 +189,7 @@ public class CrmDashBoardView extends View {
         //圆环刻度文本画笔
         mCalibrationTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mCalibrationTextPaint.setTextSize(sp2px(10));
-        mCalibrationTextPaint.setColor(Color.WHITE);
+        mCalibrationTextPaint.setColor(Color.argb(153,255,255,255));
         mCalibrationTextPaint.setTypeface(mTypeFace);
 
         //外层进度画笔，在onSizeChanged方法中设置其渐变色
@@ -243,12 +250,18 @@ public class CrmDashBoardView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        drawEdge(canvas);
         drawInnerArc(canvas);
         drawSmallCalibration(canvas);
         drawCalibrationAndText(canvas);
         drawCenterText(canvas);
         drawRingProgress(canvas);
         drawStar(canvas);
+    }
+
+    private void drawEdge(Canvas canvas) {
+        RectF rectF = new RectF(0, 0, width, height);
+        canvas.drawRect(rectF, edgePaint);
     }
 
     private void drawStar(Canvas canvas) {
@@ -258,17 +271,6 @@ public class CrmDashBoardView extends View {
             starHollowDrawable.setBounds(startX , startY, startX + starSize, startY + starSize);
             starHollowDrawable.draw(canvas);
         }
-//        Rect src = new Rect(0, 0, starSolidBitmap.getWidth()/2, starSolidBitmap.getHeight());
-//        Rect dst = new Rect(radius, radius + dp2px(20), radius + starSize/2, radius + dp2px(20) + starSize);
-//        canvas.drawBitmap(starSolidBitmap, src, dst, starPaint);
-//        canvas.drawRect(0, 0, starSize, starSize, starPaint);
-//        int startX = radius;
-//        int startY = radius + dp2px(20);
-//        int endX = startX + starSize;
-//        int endY = startY + starSize;
-//        canvas.drawRect(startX, startY, endX, endY, starPaint);
-//        Log.i("quxiaopeng", "topx :" + startX + " topY :" + startY + " bottomX :" + endX + " bottomY :" + endY);
-//        canvas.drawRect(0,0,dp2px(5),starSize,starPaint);
 
         int solidStartX = radius;
         int solidStartY = radius + dp2px(20);
@@ -311,6 +313,27 @@ public class CrmDashBoardView extends View {
             canvas.rotate(degree, radius, radius);
         }
         canvas.restore();
+
+//        canvas.save();
+//        float degree = (float) (180 / 50.0);
+//        canvas.rotate(-degree, radius, radius);
+//        //分别计算大刻度线和小刻度线的起点结束点
+//        int Y = width/2;
+//        int smallStartX = (int) (defaultPadding + arcDistance + mInnerArcPaint.getStrokeWidth() / 2);
+//        int smallEndX = smallStartX + dp2px(3);
+//        int bigStartX = defaultPadding + arcDistance;
+//        int bigEndX = bigStartX + dp2px(8);
+//        for (int i = -1; i <= 51; i++) {
+//            //每旋转3.6度画一个小刻度线，每旋转36度画一个大刻度线
+//            if (i % 10 == 0) {
+//                canvas.drawLine(bigStartX, Y, bigEndX, Y, mCalibrationPaint);
+//            } else {
+//                canvas.drawLine(smallStartX, Y, smallEndX, Y, mSmallCalibrationPaint);
+//
+//            }
+//            canvas.rotate(degree, radius, radius);
+//        }
+//        canvas.restore();
     }
 
     /**
@@ -322,17 +345,23 @@ public class CrmDashBoardView extends View {
 
         Path path = new Path();
         path.addArc(mProgressRect, mStartAngle, mCurrentAngle);
+        canvas.drawPath(path, mArcProgressPaint);
+
         PathMeasure pathMeasure = new PathMeasure(path, false);
         pathMeasure.getPosTan(pathMeasure.getLength() * 1, pos, tan);
-        matrix.reset();
-        matrix.postTranslate(pos[0] - bitmap.getWidth() / 2, pos[1] - bitmap.getHeight() / 2);
-        canvas.drawPath(path, mArcProgressPaint);
+//        matrix.reset();
+//        matrix.postTranslate(pos[0] - bitmap.getWidth() / 2, pos[1] - bitmap.getHeight() / 2);
+
+        pathMeasure.getMatrix(pathMeasure.getLength(), matrix, PathMeasure.POSITION_MATRIX_FLAG);
+        matrix.postTranslate(-bitmap.getWidth() / 2, -bitmap.getHeight() / 2);
+
+
         //起始角度不为0时候才进行绘制小圆点
         if (mCurrentAngle == 0)
             return;
         canvas.drawBitmap(bitmap, matrix, mBitmapPaint);
-        mBitmapPaint.setColor(Color.WHITE);
-        canvas.drawCircle(pos[0], pos[1], 8, mBitmapPaint);
+//        mBitmapPaint.setColor(Color.WHITE);
+//        canvas.drawCircle(pos[0], pos[1], 8, mBitmapPaint);
     }
 
     /**
@@ -342,15 +371,15 @@ public class CrmDashBoardView extends View {
      */
     private void drawCenterText(Canvas canvas) {
         mNumberPaint.setTextSize(sp2px(40));
-        canvas.drawText(String.valueOf(mMinNum), radius - dp2px(8), radius - dp2px(20), mNumberPaint);
+        canvas.drawText(String.valueOf(mMinNum), radius - dp2px(8), radius - dp2px(17), mNumberPaint);
 
         mTextPaint.setTextSize(sp2px(15));
         mTextPaint.setColor(Color.WHITE);
-        canvas.drawText("分", radius + dp2px(22), radius - dp2px(15), mTextPaint);
+        canvas.drawText("分", radius + dp2px(22), radius - dp2px(18), mTextPaint);
 
         mTextPaint.setTextSize(sp2px(14));
         mTextPaint.setColor(Color.argb(204, 244, 244, 244));
-        canvas.drawText(strHint, radius, radius + dp2px(10), mTextPaint);
+        canvas.drawText(strHint, radius, radius + dp2px(7), mTextPaint);
 
         mTextPaint.setTextSize(sp2px(10));
         canvas.drawText("今日推荐度", radius - dp2px(35), radius + dp2px(30), mTextPaint);
@@ -367,7 +396,7 @@ public class CrmDashBoardView extends View {
         canvas.rotate(-90, radius, radius);
         int rotateAngle = 180 / 5;
         for (int i = 0; i < 6; i++) {
-            canvas.drawText(String.valueOf(i), radius, defaultPadding - dp2px(4), mCalibrationTextPaint);
+            canvas.drawText(String.valueOf(i), radius - dp2px(3), defaultPadding - dp2px(4), mCalibrationTextPaint);
             canvas.rotate(rotateAngle, radius, radius);
         }
         canvas.restore();
@@ -444,7 +473,7 @@ public class CrmDashBoardView extends View {
         });
         mAngleAnim.start();
 
-        final DecimalFormat format = new DecimalFormat("#.0");
+        final DecimalFormat format = new DecimalFormat("0.0");
         // mMinNum = 350;
         ValueAnimator mNumAnim = ValueAnimator.ofFloat(mMinNum, mMaxNum);
         mNumAnim.setDuration(1000);

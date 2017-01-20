@@ -14,7 +14,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_height="360dp"
         android:layout_margin="10dp"
         android:background="@drawable/bg_orange">
 
@@ -29,12 +29,15 @@
             android:textSize="36sp" />
 
         <TextView
+            android:id="@+id/tv_mark_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/tv_mark"
             android:layout_toRightOf="@id/tv_mark"
             android:text="分"
             android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
             android:textSize="12sp" />
 
         <TextView
@@ -43,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/tv_mark"
             android:layout_below="@id/tv_mark"
-            android:layout_marginTop="8dp"
             android:text="2016年12月3日"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
@@ -57,6 +59,7 @@
             android:layout_marginTop="23dp"
             android:text="较高"
             android:textColor="@android:color/white"
+            android:layout_alignBottom="@id/tv_mark_hint"
             android:textSize="20sp" />
 
         <TextView
@@ -64,10 +67,10 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/tv_single_index"
             android:layout_below="@id/tv_single_index"
-            android:layout_marginTop="10dp"
             android:text="成单指数"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:layout_alignTop="@id/tv_date"/>
 
         <View
             android:id="@+id/divider1"

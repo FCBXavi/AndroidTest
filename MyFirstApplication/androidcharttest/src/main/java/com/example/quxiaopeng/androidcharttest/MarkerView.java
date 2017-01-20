@@ -17,6 +17,9 @@ public class MarkerView extends View {
     private Paint mWhite20PercentagePaint;
     private Paint mWhitePaint;
     private Paint mOrangePaint;
+
+    private float radius;
+
     public MarkerView(Context context) {
         super(context);
         init();
@@ -49,29 +52,43 @@ public class MarkerView extends View {
         mOrangePaint.setColor(Color.rgb(255,100,80));
     }
     private void drawCircle(Canvas canvas) {
-        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(28), mWhite10PercentagePaint);
-        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(16), mWhite20PercentagePaint);
-        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(8), mWhitePaint);
-        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(5), mOrangePaint);
+//        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(28), mWhite10PercentagePaint);
+//        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(16), mWhite20PercentagePaint);
+//        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(8), mWhitePaint);
+//        canvas.drawCircle(dp2px(28), dp2px(28), dp2px(5), mOrangePaint);
+        canvas.drawCircle(radius, radius, radius, mWhite10PercentagePaint);
+        canvas.drawCircle(radius, radius, radius/1.75f, mWhite20PercentagePaint);
+        canvas.drawCircle(radius, radius, radius/3.5f, mWhitePaint);
+        canvas.drawCircle(radius, radius, radius/5.6f, mOrangePaint);
     }
 
-    /**
-     * dp2px
-     *
-     * @param values
-     * @return
-     */
-    public int dp2px(int values) {
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        setMeasuredDimension(measureWidth(widthMeasureSpec), measureWidth(heightMeasureSpec));
+    }
 
+    private int measureWidth(int measureSpec) {
+        int result;
+        int specMode = MeasureSpec.getMode(measureSpec);
+        int specSize = MeasureSpec.getSize(measureSpec);
+
+        if (specMode == MeasureSpec.EXACTLY) {
+            result = specSize;
+        } else {
+            result = dp2px(56);
+            if (specMode == MeasureSpec.AT_MOST) {
+                result = Math.min(result, specSize);
+            }
+        }
+        radius = result/2;
+        return result;
+    }
+
+
+    public int dp2px(int values) {
         float density = getResources().getDisplayMetrics().density;
         return (int) (values * density + 0.5f);
     }
 
-    /**
-     * 将sp值转换为px值，保证文字大小不变
-     */
-    public int sp2px(float spValue) {
-        float fontScale = getResources().getDisplayMetrics().scaledDensity;
-        return (int) (spValue * fontScale + 0.5f);
-    }
 }

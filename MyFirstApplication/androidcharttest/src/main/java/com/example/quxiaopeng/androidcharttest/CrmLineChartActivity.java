@@ -2,6 +2,7 @@ package com.example.quxiaopeng.androidcharttest;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class CrmLineChartActivity extends Activity implements OnChartValueSelect
     public void initView() {
         mLineChart = (MyLineChart) findViewById(R.id.crm_line_chart);
         tvMark = (TextView) findViewById(R.id.tv_mark);
+        tvMark.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/DINCondensedC.otf"));
         setLineStyle();
         setData();
     }

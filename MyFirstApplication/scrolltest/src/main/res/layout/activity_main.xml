@@ -11,21 +11,21 @@
         <!--android:layout_height="100dp"-->
         <!--android:background="@android:color/holo_red_dark"-->
         <!--/>-->
-    <com.example.quxiaopeng.scrolltest.DragViewGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--<com.example.quxiaopeng.scrolltest.DragViewGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
 
-        <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_red_dark"/>
+        <!--<Button-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@android:color/holo_red_dark"/>-->
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
-            android:layout_marginTop="50dp"/>
+        <!--<Button-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@android:color/holo_blue_bright"-->
+            <!--android:layout_marginTop="50dp"/>-->
 
 
-    </com.example.quxiaopeng.scrolltest.DragViewGroup>
+    <!--</com.example.quxiaopeng.scrolltest.DragViewGroup>-->
 </RelativeLayout>
