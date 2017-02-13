@@ -38,6 +38,7 @@ public class CrmLineChartActivity extends Activity implements OnChartValueSelect
         setContentView(R.layout.activity_crm_linechart);
         initView();
         mLineChart.setOnChartValueSelectedListener(this);
+        
     }
 
     public void initView() {
