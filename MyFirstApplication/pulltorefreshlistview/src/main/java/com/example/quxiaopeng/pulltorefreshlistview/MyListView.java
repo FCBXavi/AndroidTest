@@ -121,6 +121,10 @@ public class MyListView extends ListView {
         }
     }
 
+    @Override
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        super.setOnItemClickListener(listener);
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {

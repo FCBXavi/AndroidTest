@@ -19,9 +19,11 @@
       <module fileurl="file://$PROJECT_DIR$/configchangetest/configchangetest.iml" filepath="$PROJECT_DIR$/configchangetest/configchangetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" filepath="$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/dashboardtest/dashboardtest.iml" filepath="$PROJECT_DIR$/dashboardtest/dashboardtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diffutiltest/diffutiltest.iml" filepath="$PROJECT_DIR$/diffutiltest/diffutiltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragrecyclerview/dragrecyclerview.iml" filepath="$PROJECT_DIR$/dragrecyclerview/dragrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/edittexttest/edittexttest.iml" filepath="$PROJECT_DIR$/edittexttest/edittexttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expandabletextview/expandabletextview.iml" filepath="$PROJECT_DIR$/expandabletextview/expandabletextview.iml" />
       <module fileurl="file://$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" filepath="$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragment2/fragment2.iml" filepath="$PROJECT_DIR$/fragment2/fragment2.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescotest/frescotest.iml" filepath="$PROJECT_DIR$/frescotest/frescotest.iml" />
@@ -48,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofittest/retrofittest.iml" filepath="$PROJECT_DIR$/retrofittest/retrofittest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/salesrecyclerview/salesrecyclerview.iml" filepath="$PROJECT_DIR$/salesrecyclerview/salesrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/scrolltest/scrolltest.iml" filepath="$PROJECT_DIR$/scrolltest/scrolltest.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview/swiperefreshlayoutandrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" filepath="$PROJECT_DIR$/swiperefreshlayouttest/swiperefreshlayouttest.iml" />

@@ -71,7 +71,7 @@ public class PoiActivity extends Activity implements SwipeRefreshLayout.OnRefres
     }
 
     private void search(String keyWord) {
-        PoiSearch.Query query = new PoiSearch.Query(keyWord, "","北京");
+        PoiSearch.Query query = new PoiSearch.Query(keyWord, "", "");
         query.setPageSize(20);
         int currentPage = mList.size() / 20;
         query.setPageNum(currentPage);

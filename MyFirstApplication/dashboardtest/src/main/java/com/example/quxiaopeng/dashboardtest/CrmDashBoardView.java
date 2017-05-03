@@ -22,8 +22,6 @@ import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
-import java.text.DecimalFormat;
-
 /**
  * Created by quxiaopeng on 2016/12/26.
  */
@@ -82,10 +80,10 @@ public class CrmDashBoardView extends View {
     private RectF mProgressRect;
 
     //最小数字
-    private float mMinNum = 0.0f;
+    private int mMinNum = 0;
 
     //最大数字
-    private float mMaxNum = 5.0f;
+    private int mMaxNum = 5;
 
     //当前进度对应角度
     private float mCurrentAngle = 0f;
@@ -256,7 +254,7 @@ public class CrmDashBoardView extends View {
         drawCalibrationAndText(canvas);
         drawCenterText(canvas);
         drawRingProgress(canvas);
-        drawStar(canvas);
+//        drawStar(canvas);
     }
 
     private void drawEdge(Canvas canvas) {
@@ -375,14 +373,14 @@ public class CrmDashBoardView extends View {
 
         mTextPaint.setTextSize(sp2px(15));
         mTextPaint.setColor(Color.WHITE);
-        canvas.drawText("分", radius + dp2px(22), radius - dp2px(18), mTextPaint);
+        canvas.drawText("分", radius + dp2px(18), radius - dp2px(18), mTextPaint);
 
         mTextPaint.setTextSize(sp2px(14));
         mTextPaint.setColor(Color.argb(204, 244, 244, 244));
         canvas.drawText(strHint, radius, radius + dp2px(7), mTextPaint);
 
-        mTextPaint.setTextSize(sp2px(10));
-        canvas.drawText("今日推荐度", radius - dp2px(35), radius + dp2px(30), mTextPaint);
+//        mTextPaint.setTextSize(sp2px(10));
+//        canvas.drawText("今日推荐度", radius - dp2px(35), radius + dp2px(30), mTextPaint);
     }
 
     /**
@@ -396,7 +394,13 @@ public class CrmDashBoardView extends View {
         canvas.rotate(-90, radius, radius);
         int rotateAngle = 180 / 5;
         for (int i = 0; i < 6; i++) {
-            canvas.drawText(String.valueOf(i), radius - dp2px(3), defaultPadding - dp2px(4), mCalibrationTextPaint);
+            if (i == 0) {
+                canvas.drawText(String.valueOf(i * 20), radius - dp2px(3), defaultPadding - dp2px(4), mCalibrationTextPaint);
+            } else if (i == 5) {
+                canvas.drawText(String.valueOf(i * 20), radius - dp2px(7), defaultPadding - dp2px(4), mCalibrationTextPaint);
+            } else {
+                canvas.drawText(String.valueOf(i * 20), radius - dp2px(5), defaultPadding - dp2px(4), mCalibrationTextPaint);
+            }
             canvas.rotate(rotateAngle, radius, radius);
         }
         canvas.restore();
@@ -443,13 +447,13 @@ public class CrmDashBoardView extends View {
     /**
      * 设置分数
      *
-     * @param values
+     * @param value
      */
-    public void setMark(float values) {
-        mMaxNum = values;
-        mTotalAngle = (float) (6 + values / 5.0 * 180);
+    public void setMark(int value) {
+        mMaxNum = value;
+        mTotalAngle = 6 + (float)value / 100 * 180;
 
-        if (values <= 3) {
+        if (value <= 60) {
             strHint = "成单指数较低";
         } else {
             strHint = "成单指数较高";
@@ -473,16 +477,16 @@ public class CrmDashBoardView extends View {
         });
         mAngleAnim.start();
 
-        final DecimalFormat format = new DecimalFormat("0.0");
+//        final DecimalFormat format = new DecimalFormat("0.0");
         // mMinNum = 350;
-        ValueAnimator mNumAnim = ValueAnimator.ofFloat(mMinNum, mMaxNum);
+        ValueAnimator mNumAnim = ValueAnimator.ofInt(mMinNum, mMaxNum);
         mNumAnim.setDuration(1000);
         mNumAnim.setInterpolator(new LinearInterpolator());
         mNumAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                mMinNum = Float.parseFloat(format.format(valueAnimator.getAnimatedValue()));
+                mMinNum = (int) valueAnimator.getAnimatedValue();
                 postInvalidate();
             }
         });

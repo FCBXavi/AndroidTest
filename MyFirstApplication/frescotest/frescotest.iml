@@ -103,9 +103,9 @@
     <orderEntry type="library" exported="" name="imagepipeline-0.7.0" level="project" />
     <orderEntry type="library" exported="" name="fresco-0.7.0" level="project" />
     <orderEntry type="library" exported="" name="bolts-android-1.1.4" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="drawee-0.7.0" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="fbcore-0.7.0" level="project" />
   </component>
 </module>

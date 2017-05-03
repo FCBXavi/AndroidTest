@@ -25,9 +25,11 @@
             <option value="$PROJECT_DIR$/configchangetest" />
             <option value="$PROJECT_DIR$/daoexamplegenerator" />
             <option value="$PROJECT_DIR$/dashboardtest" />
+            <option value="$PROJECT_DIR$/diffutiltest" />
             <option value="$PROJECT_DIR$/download" />
             <option value="$PROJECT_DIR$/dragrecyclerview" />
             <option value="$PROJECT_DIR$/edittexttest" />
+            <option value="$PROJECT_DIR$/expandabletextview" />
             <option value="$PROJECT_DIR$/floatactionbutton" />
             <option value="$PROJECT_DIR$/fragment2" />
             <option value="$PROJECT_DIR$/frescotest" />
@@ -54,6 +56,7 @@
             <option value="$PROJECT_DIR$/popupwindowtest" />
             <option value="$PROJECT_DIR$/pulltorefreshlistview" />
             <option value="$PROJECT_DIR$/retrofittest" />
+            <option value="$PROJECT_DIR$/salesrecyclerview" />
             <option value="$PROJECT_DIR$/scrolltest" />
             <option value="$PROJECT_DIR$/swiperefreshlayoutandrecyclerview" />
             <option value="$PROJECT_DIR$/swiperefreshlayouttest" />

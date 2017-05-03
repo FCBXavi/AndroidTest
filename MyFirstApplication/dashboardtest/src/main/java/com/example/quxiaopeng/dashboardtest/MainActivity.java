@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import java.text.DecimalFormat;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     private CrmDashBoardView crmDashBoardView;
     private Button btnButton;
     private Random random = new Random();
-    private DecimalFormat format = new DecimalFormat("#.0");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         btnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float f = random.nextFloat() * 5;
-                crmDashBoardView.setMark(Float.parseFloat(format.format(f)));
+                int i = random.nextInt(101);
+                crmDashBoardView.setMark(i);
             }
         });
 
