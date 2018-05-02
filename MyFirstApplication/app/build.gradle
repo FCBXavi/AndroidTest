@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 //设置编译android项目的参数
 android {
     compileSdkVersion 21 //编译时使用的skd版本
-    buildToolsVersion '23.0.2'//buildTools版本,本地必须有这个版本,如果没有,必须用本地的其他版本来替代
+    buildToolsVersion '25.0.0'//buildTools版本,本地必须有这个版本,如果没有,必须用本地的其他版本来替代
 
     defaultConfig {
         //应用的包名,最小skd版本,版本号,版本名

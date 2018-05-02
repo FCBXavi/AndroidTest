@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" filepath="$PROJECT_DIR$/floatactionbutton/floatactionbutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragment2/fragment2.iml" filepath="$PROJECT_DIR$/fragment2/fragment2.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescotest/frescotest.iml" filepath="$PROJECT_DIR$/frescotest/frescotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funnelview/funnelview.iml" filepath="$PROJECT_DIR$/funnelview/funnelview.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" filepath="$PROJECT_DIR$/gesturedetectortest/gesturedetectortest.iml" />
       <module fileurl="file://$PROJECT_DIR$/getphoneapp/getphoneapp.iml" filepath="$PROJECT_DIR$/getphoneapp/getphoneapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaotest/greendaotest.iml" filepath="$PROJECT_DIR$/greendaotest/greendaotest.iml" />
@@ -48,6 +49,7 @@
       <module fileurl="file://$PROJECT_DIR$/painttest/painttest.iml" filepath="$PROJECT_DIR$/painttest/painttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/palettetest/palettetest.iml" filepath="$PROJECT_DIR$/palettetest/palettetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" filepath="$PROJECT_DIR$/popupwindowtest/popupwindowtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" filepath="$PROJECT_DIR$/pulltorefreshlistview/pulltorefreshlistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofittest/retrofittest.iml" filepath="$PROJECT_DIR$/retrofittest/retrofittest.iml" />
       <module fileurl="file://$PROJECT_DIR$/salesrecyclerview/salesrecyclerview.iml" filepath="$PROJECT_DIR$/salesrecyclerview/salesrecyclerview.iml" />
@@ -60,6 +62,7 @@
       <module fileurl="file://$PROJECT_DIR$/toolbartest/toolbartest.iml" filepath="$PROJECT_DIR$/toolbartest/toolbartest.iml" />
       <module fileurl="file://$PROJECT_DIR$/toucheventtest/toucheventtest.iml" filepath="$PROJECT_DIR$/toucheventtest/toucheventtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/uitest/uitest.iml" filepath="$PROJECT_DIR$/uitest/uitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view2bitmap/view2bitmap.iml" filepath="$PROJECT_DIR$/view2bitmap/view2bitmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagertest/viewpagertest.iml" filepath="$PROJECT_DIR$/viewpagertest/viewpagertest.iml" />
       <module fileurl="file://$PROJECT_DIR$/webviewtest/webviewtest.iml" filepath="$PROJECT_DIR$/webviewtest/webviewtest.iml" />
     </modules>

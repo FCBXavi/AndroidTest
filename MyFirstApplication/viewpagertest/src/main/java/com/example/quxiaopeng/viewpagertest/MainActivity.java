@@ -1,10 +1,12 @@
 package com.example.quxiaopeng.viewpagertest;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +14,18 @@ import java.util.List;
 public class MainActivity extends FragmentActivity {
 
 
-    List<View> views;
-    List<String> data = new ArrayList<>();
-    ViewPager mViewPager;
-    Button button;
+    private List<Fragment> mFragmentList = new ArrayList<>();
+    private ViewPager mViewPager;
+    private TabLayout mTabLayout;
+    
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        ViewPager viewPager=(ViewPager)findViewById(R.id.vp_viewPager);
+        mViewPager = (ViewPager) findViewById(R.id.vp_viewPager);
+        mTabLayout = (TabLayout) findViewById(R.id.tab_layout);
 //        views=new ArrayList<>();
 //        LayoutInflater inflater=getLayoutInflater();
 //        View view1=inflater.inflate(R.layout.fragment1, null);
@@ -34,22 +39,33 @@ public class MainActivity extends FragmentActivity {
 //        viewPager.setCurrentItem(0);
 //        viewPager.setOffscreenPageLimit(2);
 
-        mViewPager = (ViewPager) findViewById(R.id.vp_viewPager);
-        button = (Button) findViewById(R.id.btn_button);
-        for (int i = 0; i < 10; i++) {
-            data.add("title" + i);
-        }
-        OtherAdapter otherAdapter = new OtherAdapter(getSupportFragmentManager(), data);
-        mViewPager.setAdapter(otherAdapter);
-        mViewPager.setPageMargin(10);
-        button.setOnClickListener(new View.OnClickListener() {
+        Fragment1 fragment1 = new Fragment1();
+        Fragment2 fragment2 = new Fragment2();
+        Fragment3 fragment3 = new Fragment3();
+        mFragmentList.add(fragment1);
+        mFragmentList.add(fragment2);
+        mFragmentList.add(fragment3);
+        OtherAdapter adapter = new OtherAdapter(getSupportFragmentManager(), mFragmentList);
+        mViewPager.setAdapter(adapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+        Log.i(TAG, "onCreate: ");
+        new Handler().post(new Runnable() {
             @Override
-            public void onClick(View v) {
-                int current = mViewPager.getCurrentItem();
-                mViewPager.setCurrentItem(current+1, true);
+            public void run() {
+                Log.i(TAG, "run: ");
             }
         });
-//        mViewPager.setPageMarginDrawable(R.drawable.icon);
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG, "onStart: ");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume: ");
     }
 }

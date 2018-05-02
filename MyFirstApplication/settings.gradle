@@ -1,4 +1,4 @@
-include ':app', ':salesrecyclerview', ':expandabletextview', ':diffutiltest',
+include ':app', ':salesrecyclerview', ':expandabletextview', ':diffutiltest', ':funnelview', ':view2bitmap', ':processor',
         ':FragmentTest',
         ':fragment2',
         ':toucheventtest',

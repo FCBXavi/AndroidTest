@@ -9,10 +9,10 @@ import android.util.Log;
 /**
  * Created by quxiaopeng on 15/9/18.
  */
-public class MyService extends Service{
+public class MyService extends Service {
     //@Nullable
 
-    class MyServiceAIDLinstance extends myServiceAIDL.Stub{
+    class MyServiceAIDLInstance extends myServiceAIDL.Stub {
         @Override
         public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
 
@@ -20,13 +20,15 @@ public class MyService extends Service{
 
         @Override
         public int add(int value1, int value2) throws RemoteException {
-            return value1+value2;
+            return value1 + value2;
         }
+
     }
+
     @Override
     public IBinder onBind(Intent intent) {
-        Log.i("service","is start");
-        return new MyServiceAIDLinstance();
+        Log.i("service", "is start");
+        return new MyServiceAIDLInstance();
     }
 
 

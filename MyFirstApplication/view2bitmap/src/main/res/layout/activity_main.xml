@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_share_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#FF6450">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/iv_trophy"
+            android:text="杨胖子本季度负增长，可能要被开除了"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_trophy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/icon_rank_trophy" />
+
+        <TextView
+            android:id="@+id/tv_rank_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_description"
+            android:layout_below="@id/tv_description"
+            android:layout_marginTop="8dp"
+            android:text="销售龙虎榜"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_rank_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_rank_type"
+            android:layout_below="@id/tv_rank_type"
+            android:layout_marginTop="2dp"
+            android:text="回款金额 | 按签约人统计 | 2017 年 10 月"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rank_param"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:elevation="8dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_rank_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingTop="13dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_create_bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_share_card"
+        android:text="CREATE BITMAP" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_bitmap"
+        android:layout_below="@id/btn_create_bitmap"/>
+
+    <ImageView
+        android:id="@+id/iv_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"/>
+
+</RelativeLayout>

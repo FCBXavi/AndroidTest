@@ -33,6 +33,7 @@
             <option value="$PROJECT_DIR$/floatactionbutton" />
             <option value="$PROJECT_DIR$/fragment2" />
             <option value="$PROJECT_DIR$/frescotest" />
+            <option value="$PROJECT_DIR$/funnelview" />
             <option value="$PROJECT_DIR$/gesturedetectortest" />
             <option value="$PROJECT_DIR$/getphoneapp" />
             <option value="$PROJECT_DIR$/greendaotest" />
@@ -54,6 +55,7 @@
             <option value="$PROJECT_DIR$/painttest" />
             <option value="$PROJECT_DIR$/palettetest" />
             <option value="$PROJECT_DIR$/popupwindowtest" />
+            <option value="$PROJECT_DIR$/processor" />
             <option value="$PROJECT_DIR$/pulltorefreshlistview" />
             <option value="$PROJECT_DIR$/retrofittest" />
             <option value="$PROJECT_DIR$/salesrecyclerview" />
@@ -66,6 +68,7 @@
             <option value="$PROJECT_DIR$/toolbartest" />
             <option value="$PROJECT_DIR$/toucheventtest" />
             <option value="$PROJECT_DIR$/uitest" />
+            <option value="$PROJECT_DIR$/view2bitmap" />
             <option value="$PROJECT_DIR$/viewpagertest" />
             <option value="$PROJECT_DIR$/webviewtest" />
           </set>

@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import ItemAnimator.FadeInLeftAnimator;
+
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
@@ -26,27 +28,35 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_student);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mRandom = new Random();
-        for (int i = 0; i < 10; i++) {
-            mList.add(new Student(String.valueOf(mRandom.nextInt(3000)), "Student : " + i));
-        }
-        final StudentAdapter adapter = new StudentAdapter(this, mList);
-        mRecyclerView.setAdapter(adapter);
+//        mRandom = new Random();
+//        for (int i = 0; i < 10; i++) {
+//            mList.add(new Student(String.valueOf(mRandom.nextInt(3000)), "Student : " + i));
+//        }
+//        final StudentAdapter adapter = new StudentAdapter(this, mList);
+//        mRecyclerView.setAdapter(adapter);
+
+        final TestAnimatorAdapter animatorAdapter = new TestAnimatorAdapter(this, mList);
+        mRecyclerView.setItemAnimator(new FadeInLeftAnimator());
+        mRecyclerView.setAdapter(animatorAdapter);
 
         mBtnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mList.size() > 0) {
-                    mList.remove(0);
+//                if (mList.size() > 0) {
+//                    mList.remove(0);
+//                }
+//                for (int i = 0; i < mRandom.nextInt(3); i++) {
+////                    int index = mRandom.nextInt(mList.size() - 1);
+//                    int index = mList.size();
+//                    Student student = new Student(String.valueOf(mRandom.nextInt(3000)), "new Student" + mRandom.nextInt());
+//                    mList.add(index, student);
+//                }
+//                adapter.notifyDiff();
+                for (int i = 0; i < 5; i++) {
+                    Student student = new Student("", "张三");
+                    mList.add(student);
                 }
-                for (int i = 0; i < mRandom.nextInt(3); i++) {
-//                    int index = mRandom.nextInt(mList.size() - 1);
-                    int index = mList.size();
-                    Student student = new Student(String.valueOf(mRandom.nextInt(3000)), "new Student" + mRandom.nextInt());
-                    mList.add(index, student);
-                }
-
-                adapter.notifyDiff();
+                animatorAdapter.notifyItemRangeInserted(mList.size() - 5, 5);
             }
         });
     }

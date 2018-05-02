@@ -89,6 +89,15 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter {
     public abstract void bind(RecyclerView.ViewHolder holder, int position);
 
 
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.mItemClickListener = listener;
+    }
+
+    public void setOnItemLongClickListener(OnItemLongClickListener listener) {
+        this.mItemLongClickListener = listener;
+    }
+
+
     public interface OnItemClickListener {
         void onItemClick(View view, int position);
     }

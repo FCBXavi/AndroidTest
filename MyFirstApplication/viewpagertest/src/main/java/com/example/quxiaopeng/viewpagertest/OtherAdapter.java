@@ -1,6 +1,5 @@
 package com.example.quxiaopeng.viewpagertest;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -12,24 +11,26 @@ import java.util.List;
  */
 public class OtherAdapter extends FragmentStatePagerAdapter {
 
-    private List<String> data;
+    private List<Fragment> mList;
+    private String[] mTitles = {"Tab1", "Tab2", "Tab3"};
 
-    public OtherAdapter(FragmentManager fm, List<String> data) {
+    public OtherAdapter(FragmentManager fm, List<Fragment> list) {
         super(fm);
-        this.data = data;
+        this.mList = list;
     }
 
     @Override
     public Fragment getItem(int position) {
-        MyFragment fragment = new MyFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("data", data.get(position));
-        fragment.setArguments(bundle);
-        return fragment;
+        return mList.get(position);
     }
 
     @Override
     public int getCount() {
-        return data == null ? 0 : data.size();
+        return mList == null ? 0 : mList.size();
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mTitles[position];
     }
 }

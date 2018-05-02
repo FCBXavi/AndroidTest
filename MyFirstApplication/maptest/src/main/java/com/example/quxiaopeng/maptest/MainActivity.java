@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onCameraChangeFinish(CameraPosition cameraPosition) {
                 LatLonPoint target = new LatLonPoint(mMap.getCameraPosition().target.latitude,mMap.getCameraPosition().target.longitude);
+//                double[] gd = bd09_to_gcj02(47.330871, 87.766948);
+//                LatLonPoint target = new LatLonPoint(gd[0], gd[1]);
                 mCurrentPosition.longitude = target.getLongitude();
                 mCurrentPosition.latitude = target.getLatitude();
                 Log.i("jonathan", "longitude:" + target.getLongitude() + " latitude: "+ target.getLatitude());
@@ -99,6 +101,17 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+    }
+
+    public static double[] bd09_to_gcj02(double lat, double lon) {
+        double[] gcj_latlng = new double[2];
+        double x_pi = 3.14159265358979324 * 3000.0 / 180.0;
+        double x = lon - 0.0065, y = lat - 0.006;
+        double z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * x_pi);
+        double theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * x_pi);
+        gcj_latlng[0] = z * Math.sin(theta);
+        gcj_latlng[1] = z * Math.cos(theta);
+        return gcj_latlng;
     }
 
     private void initUiSetting() {

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MyService">
+        <service android:name=".MyService"
+            android:process=":remote">
             <intent-filter>
                 <action android:name="startcalculate"/>
                 <category android:name="android.intent.category.DEFAULT"></category>
